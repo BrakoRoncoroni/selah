@@ -1,0 +1,308 @@
+ /*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ /* Estilos Mobile */
+ /* Estilos de INDEX */
+
+ body{
+    background-color: black;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.navcolor{
+    color: goldenrod;
+}
+/* HEADER */
+
+header{
+    display: flex;
+    position: sticky;
+    justify-content: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+header div{
+    height: 15vh;
+}
+
+header div h1{
+    display: none;
+}
+
+header div img{
+    display: flex;
+    position: relative;
+    border-radius: 100%;
+    height: 15vh;
+}
+
+.subtitle-line{
+    color: white;
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #999;
+    display: block;
+    font-size: 1.188rem;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+
+/*---------------------------------MAIN--------------------------------------------*/
+.navbar{
+    display: flex;
+    position: sticky;
+}
+
+.navcolor{
+    border-radius: 10px;
+    background-color:rgb(33, 33, 33);
+}
+
+.navbar-brand{
+    font-size: medium;
+    
+}
+
+.nav-link, .navbar-brand{
+    color: rgb(132, 101, 21) !important;
+
+}
+
+.navbar-toggler-icon{
+    color: whitesmoke !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28132, 101, 21, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+main .img1, .img3{
+    display: none;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 25%);
+    row-gap: 15px;
+    padding: 10px;
+    align-content: center;
+}
+
+section div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sucursales{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #999;
+}
+
+.sucursales a{
+    text-decoration: underline;
+    color: goldenrod;
+}
+
+footer{
+    margin-bottom: 15px;
+}
+
+/* ----------------- estilos menu ------------------- */
+
+.menuselah{
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+    color: white;
+    height: 100%;
+
+}
+
+.prod{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #999;
+    border-radius: 5px;
+}
+
+.prod img {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+
+
+.tituloselah, .quienes, .soy{
+    color: rgba(245, 245, 245, 0.804);
+    margin: 5px;
+    padding: 5px;
+}
+
+.tituloselah h1, .quienes{
+    text-decoration: underline;
+}
+
+.parrafo{
+    padding: 5px;
+    border: double 4px  rgb(132, 101, 21);
+}
+.contenedor{
+    display: flex;
+}
+
+.sucursales{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #999;
+}
+
+.sucursales a{
+    text-decoration: underline;
+    color: goldenrod;
+}
+
+/* --------------------------FOOTER-------------------------- */
+
+footer{
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 50px;
+   }
+   
+   footer a{   
+       margin: 10px;
+       padding: 5px;
+   
+   }
+   
+   footer div{
+       margin-top: 10vh;
+       text-align: center;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+   }
+   footer a{
+       color: #999;
+       text-decoration: none;
+       margin-bottom: 20px;
+   }
+   
+   .soy{
+       padding: 5px;
+       border: double 4px  rgb(132, 101, 21);
+   }
+   
+   .imagenes{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+   }
+   
+/* -----------------------------------ESTILOS PARA DESKTOP----------------------- */
+@media screen and (min-width: 1024px){
+    
+    header{
+        height: 20vh;
+    }
+    header .logo{
+        height: 20vh;
+    }
+
+    section{
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-rows: 30% 30% 20%;
+        gap: 10px;
+        height: 75vh;
+        }
+
+    main .img1, main .img3{
+        display: block;
+    }
+
+    main .img1, main .img3{
+        grid-row: span 2;
+    }
+
+    main .img2, main .img4{
+        grid-column: span 1;
+    }
+
+    main .img5{
+        grid-column: span 3;
+    }
+
+    footer{
+        margin-top: 5px;
+    }
+
+    .menuselah{
+        display: flex;
+        justify-content: space-around;
+        height: 55vh;
+    }
+    
+    .section-prod {
+        display: flex;
+        justify-content: center;
+    }
+
+    .soy{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column: span 1;
+
+    }
+
+    .redesnosotros{
+        border: double 4px rgb(132, 101, 21);
+        padding: 5px;
+    }
+
+
+
+    .suc{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 10vh;
+    }
+
+    .sucursales{
+        gap: 20px;
+    }
+
+    .maps{
+        height: 300px;
+        width: 450px;
+    }
+
+    .unite{
+        display: flex;
+        justify-content: center;
+    }
+} 
+
+
+
+
+
+
+
