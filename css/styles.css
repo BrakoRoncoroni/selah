@@ -54,6 +54,22 @@ header div img{
 
 
 /*---------------------------------MAIN--------------------------------------------*/
+
+.navbar .navbar-nav .nav-link:hover{
+    background-color: rgb(161, 119, 12);
+    color: whitesmoke !important;
+    box-shadow: 0px 5px 5px grey;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.ifhere{
+    background-color: rgb(254, 189, 25);
+    box-shadow: 0px 5px 5px grey;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
 .navbar{
     display: flex;
     position: sticky;
