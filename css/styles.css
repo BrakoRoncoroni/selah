@@ -167,7 +167,6 @@ footer{
     padding: 5px;
     background-color: #999;
     border-radius: 5px;
-    overflow: hidden;
 }
 
 .prod img {
@@ -322,6 +321,10 @@ footer{
     .section-prod {
         display: flex;
         justify-content: center;
+    }
+
+    .prod{
+        overflow: hidden;
     }
 
 
