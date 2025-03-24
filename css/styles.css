@@ -70,7 +70,7 @@ header div img{
 /* seleccion de pagina actual */
 .ifhere{
     background-color: rgb(254, 189, 25);
-    box-shadow: 0px 5px 5px grey;
+    box-shadow: 0px 5px 5px rgb(82, 82, 82);
     border-radius: 10px;
     margin-top: 5px;
 }
@@ -257,10 +257,15 @@ footer{
    .redesnosotros{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
+.redesnosotros a:hover{
+    background-color: grey;
+    color: black;
+    border-radius: 10px;
+}
 
    
 /* -----------------------------------ESTILOS PARA DESKTOP----------------------- */
