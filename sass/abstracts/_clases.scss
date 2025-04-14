@@ -1,0 +1,103 @@
+@mixin subtitle-line{
+    color: white;
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #999;
+    display: block;
+    font-size: 1.188rem;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+}
+
+@mixin barranav{
+    // botones menos "SELAH-expertos..."
+    border-radius: 10px;
+    transition: background-color 0.5s, box-shadow 0.5s, border-radius 0.5s, margin-top 0.5s;
+}
+
+@mixin barrahover{
+    background-color: rgb(33, 33, 33);
+    color: whitesmoke !important;
+    // box-shadow: 0px 5px 5px grey;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+@mixin ifhere{
+    background-color: rgb(254, 189, 25);
+    box-shadow: 0px 5px 5px rgb(82, 82, 82);
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+@mixin navflex{
+    display: flex;
+    position: sticky;
+}
+
+@mixin colornav{
+    background-color:rgb(33, 33, 33);
+    color: goldenrod;
+}
+@mixin brand-navbar{
+    font-size: medium;
+}
+@mixin brand-navbarhover{
+    background-color: rgb(161, 119, 12);
+    color: whitesmoke !important;
+    box-shadow: 0px 5px 5px grey;
+    border-radius: 10px;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+@mixin colornav{
+    background-color: rgb(33, 33, 33);
+    color: rgb(132, 101, 21) !important;
+}
+
+@mixin burger{
+    color: whitesmoke !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28132, 101, 21, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@mixin sucursales{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #999;
+}
+// clases para menu
+// ESTO SE PUEDE UNIFICAR-----------
+@mixin prod{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    background-color: #999;
+    border-radius: 5px;
+}
+// clase para boxes
+@mixin boxes{
+    color: rgba(245, 245, 245, 0.804);
+    margin: 5px;
+    padding: 5px;
+}
+@mixin parrafo{
+    padding: 5px;
+    border: double 4px  rgb(132, 101, 21);
+}
+
+@mixin soy{
+    padding: 5px;
+    border: double 4px  rgb(132, 101, 21);
+}
+
+@mixin imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}

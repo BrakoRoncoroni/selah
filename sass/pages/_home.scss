@@ -1,0 +1,149 @@
+@import "../abstracts/variables";
+@import "../abstracts/mixin";
+@import "../abstracts/clases";
+
+// estilos header
+
+header{
+    @include header;
+    div{
+        height: 15vh;
+        h1{
+            display: none;
+        }
+        img{
+            @include headerimg
+        }
+    }
+}
+
+.subtitle-line{
+    @include subtitle-line;
+}
+
+// estilos de barra de navegacion ---------------------------------------------------------
+.navbar{
+    @include navflex;
+}
+
+.navbar, .navbar-nav, .nav-link{
+    @include barranav;
+}
+.navbar, .navbar-nav, .nav-link:hover{
+    @include barrahover;
+}
+.ifhere{
+    @include ifhere;
+}
+.navcolor{
+    @include colornav;
+}
+.navbar-brand{
+    @include brand-navbar
+}
+.navbar-brand:hover{
+    @include brand-navbarhover;
+}
+.nav-link, .navbar-brand{
+    @include colornav;
+}
+.navbar-toggler-icon{
+    @include burger;
+}
+
+
+// estilos main -----------------------------------------
+// noneo mobile
+main{
+    height: 80vh;
+}
+main .img1, .img3{
+    @include noneo;
+}
+
+section{
+    @include grid(grid, 1fr, repeat(3, 30%), 15px);
+    padding: 20px;
+    align-content: center;
+}
+.sucursales{
+    @include sucursales;
+    a{
+        text-decoration: underline;
+        color: goldenrod;    
+    }
+}
+
+// estilos footer
+footer{
+    margin-bottom: 15px;
+}
+
+// menu
+.menuselah{
+    @include grid (grid, repeat(2, 1fr), 0, 30px);
+    color: white;
+    height: 100%;
+}
+.prod{
+    @include prod;
+    img{
+        @include img;
+        border-radius: 10px;
+    }
+}
+
+// boxes
+.tituloselah, .quienes, .soy{
+    @include boxes;
+}
+.tituloselah h1, .quienes{
+    text-decoration: underline;
+}
+.parrafo{
+    @include parrafo;
+}
+.contenedor, .nosotros{
+    @include grid(grid, repeat(2,1fr),0,0)
+}
+.nosotros{
+    a{
+        text-decoration: none;
+        color: grey
+    }
+}
+
+.redesnosotros{
+    @include redesflex;
+}
+.redesnosotros:hover{
+    background-color: grey;
+    color: black;
+    border-radius: 10px;
+}
+
+footer{
+    @include footer;
+    a{
+        color: #999;
+        text-decoration: none;
+        margin-bottom: 20px;
+        margin: 10px;
+        padding: 5px;
+     }
+     div{
+        margin-top: 10vh;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; 
+     }
+}
+.soy{
+    @include soy;
+}
+.imagenes{
+    @include imagenes;
+}
+
+

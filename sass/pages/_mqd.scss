@@ -1,0 +1,81 @@
+@media screen and (min-width: 1024px){
+    
+    header{
+        height: 20vh;
+    }
+    header .logo{
+        height: 20vh;
+    }
+    section{
+        grid-template-columns: repeat(3, 1fr) ;
+        grid-template-rows: 30% 30% 20%;
+        gap: 10px;
+        height: 75vh;
+        }
+        main .img1, main .img3{
+            display: block;
+        }
+    
+        main .img1, main .img3{
+            grid-row: span 2;
+        }
+    
+        main .img2, main .img4{
+            grid-column: span 1;
+        }
+    
+        main .img5{
+            grid-column: span 3;
+        }
+        footer{
+            margin-top: 5px;
+        }
+        .menuselah{
+            display: flex;
+            justify-content: space-around;
+            height: 55vh;
+        }
+        
+        .section-prod {
+            display: flex;
+            justify-content: center;
+        }
+    
+        .prod{
+            overflow: hidden;
+        }
+    
+        .soy{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column: span 1;
+    
+        }
+    
+        .redesnosotros{
+            border: double 4px rgb(132, 101, 21);
+            padding: 5px;
+        }
+    
+    
+        .suc{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin-top: 10vh;
+        }
+    
+        .sucursales{
+            gap: 20px;
+        }
+    
+        .maps{
+            height: 300px;
+            width: 450px;
+        }
+    
+        .unite{
+            display: flex;
+            justify-content: center;
+        }
+    } 
+    
