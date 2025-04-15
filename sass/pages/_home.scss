@@ -62,9 +62,8 @@ main .img1, .img3{
 
 section{
     @include grid(grid, 1fr, repeat(3, 30%), 5px);
-    align-content: center;
-    padding: 10%;
     justify-content: center;
+    padding: 5%;
     div{
         img{
             height: 100%;
