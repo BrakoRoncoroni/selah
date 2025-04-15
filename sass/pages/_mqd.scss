@@ -9,8 +9,13 @@
     section{
         grid-template-columns: repeat(3, 1fr) ;
         grid-template-rows: 30% 30% 20%;
-        gap: 10px;
-        height: 75vh;
+        gap: 10 px;
+        height: 100%;
+        div{
+            img{
+                width: 100%;
+            }
+        }
         }
         main .img1, main .img3{
             display: block;
@@ -33,16 +38,6 @@
         .menuselah{
             display: flex;
             justify-content: space-around;
-            height: 55vh;
-        }
-        
-        .section-prod {
-            display: flex;
-            justify-content: center;
-        }
-    
-        .prod{
-            overflow: hidden;
         }
     
         .soy{

@@ -54,17 +54,24 @@ header{
 
 // estilos main -----------------------------------------
 // noneo mobile
-main{
-    height: 80vh;
-}
+
+
 main .img1, .img3{
     @include noneo;
 }
 
 section{
-    @include grid(grid, 1fr, repeat(3, 30%), 15px);
-    padding: 20px;
+    @include grid(grid, 1fr, repeat(3, 30%), 5px);
     align-content: center;
+    padding: 10%;
+    justify-content: center;
+    div{
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;    
+    }
+    }
 }
 .sucursales{
     @include sucursales;
@@ -73,18 +80,18 @@ section{
         color: goldenrod;    
     }
 }
-
 // estilos footer
 footer{
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 // menu
+
 .menuselah{
-    @include grid (grid, repeat(2, 1fr), 0, 30px);
+    @include grid (grid, repeat(2, 1fr), repeat(2, 1fr), 30px);
     color: white;
-    height: 100%;
 }
+
 .prod{
     @include prod;
     img{
@@ -115,6 +122,9 @@ footer{
 
 .redesnosotros{
     @include redesflex;
+    a{
+        text-decoration: none;
+    }
 }
 .redesnosotros:hover{
     background-color: grey;
@@ -141,6 +151,10 @@ footer{
 }
 .soy{
     @include soy;
+    height: fit-content;
+    a{
+        text-decoration: none;
+        color: antiquewhite;    }
 }
 .imagenes{
     @include imagenes;
