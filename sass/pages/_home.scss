@@ -54,22 +54,19 @@ header{
 
 // estilos main -----------------------------------------
 // noneo mobile
-
-
-main .img1, .img3{
-    @include noneo;
-}
-
-section{
-    @include grid(grid, 1fr, repeat(3, 30%), 5px);
-    justify-content: center;
-    padding: 5%;
-    div{
-        img{
-            height: 100%;
-            width: 100%;
-            object-fit: cover;    
-    }
+.index{
+    max-width: 95%;
+    margin-top: 20px;
+    margin: 5% auto;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    color: whitesmoke;
+    border-bottom: 1px solid white;
+    img{
+        width: 50%;
+        height: 80%;
+        border-radius: 5px;
     }
 }
 .sucursales{
