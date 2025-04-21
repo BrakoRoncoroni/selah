@@ -246,26 +246,16 @@ footer div {
   header .logo {
     height: 20vh;
   }
-  section {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 30% 30% 20%;
-    gap: 10 px;
-    height: 100%;
+  .index {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    justify-content: space-between;
   }
-  section div img {
-    width: 100%;
-  }
-  main .img1, main .img3 {
-    display: block;
-  }
-  main .img1, main .img3 {
-    grid-row: span 2;
-  }
-  main .img2, main .img4 {
-    grid-column: span 1;
-  }
-  main .img5 {
-    grid-column: span 3;
+  .index img {
+    height: 300px;
+    width: 300px;
   }
   footer {
     margin-top: 5px;
