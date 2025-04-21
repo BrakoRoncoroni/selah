@@ -84,7 +84,16 @@ footer{
     margin-bottom: 5px;
 }
 
-// menu
+// -------------------------menu------------------------------
+
+.sectionmenu{
+    h2{
+        color: white;
+        margin-top: 20px;
+        text-align: center;
+        text-decoration: underline;
+    }
+}
 
 .menuselah{
     @include grid (grid, repeat(2, 1fr), repeat(2, 1fr), 30px);
@@ -97,6 +106,7 @@ footer{
         @include img;
         border-radius: 10px;
     }
+    justify-content: space-around;
 }
 
 // boxes

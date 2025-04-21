@@ -36,8 +36,9 @@
             margin-top: 5px;
         }
         .menuselah{
-            display: flex;
+            @include grid(grid, repeat(4, 1fr), 1fr, 10px);
             justify-content: space-around;
+            padding: 10px;
         }
     
         .soy{
