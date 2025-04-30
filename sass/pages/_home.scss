@@ -69,6 +69,7 @@ header{
         border-radius: 5px;
     }
 }
+
 .sucursales{
     @include sucursales;
     a{
@@ -110,14 +111,26 @@ footer{
 .tituloselah, .quienes, .soy{
     @include boxes;
 }
+
+
 .tituloselah h1, .quienes{
     text-decoration: underline;
+    text-align: center;
 }
 .parrafo{
     @include parrafo;
+    text-align: center;
 }
-.contenedor, .nosotros{
-    @include grid(grid, repeat(2,1fr),0,0)
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.sobrecontenedor{
+    justify-content: center;
+    text-align: center;
 }
 .nosotros{
     a{
@@ -166,4 +179,32 @@ footer{
     @include imagenes;
 }
 
+// agregados de index
+.atajos{
+    text-align: center;
+    margin-bottom: 30px;
+    justify-items: center;
+}
+.link-atajos{
+    background-color: grey;
+    justify-content: center;
+    width: fit-content;
+    padding: 5px;
+    margin: 40px;
+    border-radius: 10px;
+    a{
+        color: goldenrod;
+        text-decoration: none;
+    }
+    img{
+        display: none;
+    }
+}
+
+.link-atajos:hover{
+    padding: 15px;
+    transition: 0.5s;
+    transition-duration: 0.5s;
+    
+}
 

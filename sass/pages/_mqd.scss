@@ -6,16 +6,25 @@
     header .logo{
         height: 20vh;
     }
-    .index{
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
+    .init{
+        display: flex;
         text-align: center;
+        align-content: center;
+    }
+    .index{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        margin: 5% auto;
+        gap: 5px;
+        padding: 5px;
+        color: rgba(245, 245, 245, 0.7);
         img{
-            height: 300px;
-            width: 300px;
+            width: 60%;
+            height: 60%;
+            border-radius: 5px;
         }
-        justify-content: space-between;
     }
 
         footer{
@@ -26,20 +35,28 @@
             justify-content: space-around;
             padding: 10px;
         }
+        .tituloselah{
+            text-align: center;
+        }
+        .quienes{
+            text-align: center;
+        }
+        .contenedor{
+            gap: 10px;
+                align-items: center;
+                img{
+                    border-radius: 100px;
+                }
+        }
+        .sobrecontenedor{
+            text-align: center;
+        }
     
         .soy{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-column: span 1;
-    
+            display: flex;
+            flex-direction: column;
         }
-    
-        .redesnosotros{
-            border: double 4px rgb(132, 101, 21);
-            padding: 5px;
-        }
-    
-    
+
         .suc{
             display: grid;
             grid-template-columns: repeat(2, 1fr);
@@ -58,6 +75,11 @@
         .unite{
             display: flex;
             justify-content: center;
+        }
+        .link-atajos{
+            img{
+                display: inline;
+            }
         }
     } 
     

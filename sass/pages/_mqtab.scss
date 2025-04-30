@@ -1,0 +1,47 @@
+@media screen and (min-width: 768px) {
+
+    // inicio
+    .init{
+        display: flex;
+        text-align: center;
+        align-content: center;
+    }
+    .index{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        margin: 5% auto;
+        gap: 5px;
+        padding: 5px;
+        color: rgba(245, 245, 245, 0.7);
+        img{
+            width: 60%;
+            height: 60%;
+            border-radius: 5px;
+        }
+    }
+
+
+    // sucursales
+    .sucursales{
+        img{
+            height: 30vh;
+            width: 50vh;
+        }
+    }
+    .contenedor{
+        img{
+            border-radius: 50%; 
+        }
+    }
+    .soy{
+        border: none;
+    }
+
+    .link-atajos{
+        img{
+            display: inline;
+        }
+    }
+}

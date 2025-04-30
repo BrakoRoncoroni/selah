@@ -166,18 +166,26 @@ footer {
 
 .tituloselah h1, .quienes {
   text-decoration: underline;
+  text-align: center;
 }
 
 .parrafo {
   padding: 5px;
   border: double 4px rgb(132, 101, 21);
+  text-align: center;
 }
 
-.contenedor, .nosotros {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 0;
-  gap: 0;
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.sobrecontenedor {
+  justify-content: center;
+  text-align: center;
 }
 
 .nosotros a {
@@ -239,6 +247,34 @@ footer div {
   justify-content: space-around;
 }
 
+.atajos {
+  text-align: center;
+  margin-bottom: 30px;
+  justify-items: center;
+}
+
+.link-atajos {
+  background-color: grey;
+  justify-content: center;
+  width: fit-content;
+  padding: 5px;
+  margin: 40px;
+  border-radius: 10px;
+}
+.link-atajos a {
+  color: goldenrod;
+  text-decoration: none;
+}
+.link-atajos img {
+  display: none;
+}
+
+.link-atajos:hover {
+  padding: 15px;
+  transition: 0.5s;
+  transition-duration: 0.5s;
+}
+
 @media screen and (min-width: 1024px) {
   header {
     height: 20vh;
@@ -246,16 +282,25 @@ footer div {
   header .logo {
     height: 20vh;
   }
-  .index {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+  .init {
+    display: flex;
     text-align: center;
-    justify-content: space-between;
+    align-content: center;
+  }
+  .index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin: 5% auto;
+    gap: 5px;
+    padding: 5px;
+    color: rgba(245, 245, 245, 0.7);
   }
   .index img {
-    height: 300px;
-    width: 300px;
+    width: 60%;
+    height: 60%;
+    border-radius: 5px;
   }
   footer {
     margin-top: 5px;
@@ -268,14 +313,25 @@ footer div {
     justify-content: space-around;
     padding: 10px;
   }
-  .soy {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column: span 1;
+  .tituloselah {
+    text-align: center;
   }
-  .redesnosotros {
-    border: double 4px rgb(132, 101, 21);
-    padding: 5px;
+  .quienes {
+    text-align: center;
+  }
+  .contenedor {
+    gap: 10px;
+    align-items: center;
+  }
+  .contenedor img {
+    border-radius: 100px;
+  }
+  .sobrecontenedor {
+    text-align: center;
+  }
+  .soy {
+    display: flex;
+    flex-direction: column;
   }
   .suc {
     display: grid;
@@ -292,6 +348,44 @@ footer div {
   .unite {
     display: flex;
     justify-content: center;
+  }
+  .link-atajos img {
+    display: inline;
+  }
+}
+@media screen and (min-width: 768px) {
+  .init {
+    display: flex;
+    text-align: center;
+    align-content: center;
+  }
+  .index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin: 5% auto;
+    gap: 5px;
+    padding: 5px;
+    color: rgba(245, 245, 245, 0.7);
+  }
+  .index img {
+    width: 60%;
+    height: 60%;
+    border-radius: 5px;
+  }
+  .sucursales img {
+    height: 30vh;
+    width: 50vh;
+  }
+  .contenedor img {
+    border-radius: 50%;
+  }
+  .soy {
+    border: none;
+  }
+  .link-atajos img {
+    display: inline;
   }
 }
 
